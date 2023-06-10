@@ -1,0 +1,132 @@
+/* pages/records/record_diet/record_diet.wxss */
+@import "../record_public.wxss";
+.health-records-quesitonbox{
+  
+  width:100%;
+  /* height:700rpx; */
+  height: 100%;
+  float: left;
+  /* margin-left: 5%; */
+  margin-top: 1%;
+  
+}
+.scroll{
+  width: 100%;
+  height: 70%;
+}
+
+
+.topNav{
+  margin-left: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40rpx;
+  height: 7%;
+}
+
+.health-records-content{
+  margin-top: 1%;
+ margin-left: 12%;
+  position: absolute;
+  z-index: 1;
+  width:70%;
+  height:80%;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35rpx;
+  color: #625D5A;
+  font-weight: bold;
+}
+
+.questionbox-scale text {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.wrap {
+  width: 90%;
+  margin: 30rpx auto;
+  border: 1px #ccc solid;
+}
+
+
+
+.submitBTN{
+  width: 100%;
+}
+
+.submitBTN image{
+
+  
+  margin-top: 2%;
+  margin-left: 18%;
+  width: 64%;
+}
+
+.trashfood-img{
+  width: 110rpx;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.questionbox-checkbox
+{
+  margin-top: 5%;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  border-color:#625D5A;
+  vertical-align: middle;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background:#2ea7e0;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  content: '';
+  border-radius: 50%;
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #ffffff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+.btnstyle{
+  position: absolute;
+  bottom: 50rpx;
+  left: 15%;
+}
+
+.today_success{
+  margin-top: 25%;
+  margin-left: 5%;
+  width: 100%;
+  
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 45rpx;
+  color: #625D5A;
+  font-weight: bold;
+}
+
+
+
+
+
+

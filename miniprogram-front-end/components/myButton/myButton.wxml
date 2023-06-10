@@ -1,0 +1,4 @@
+<navigator class="btn" hover-class="none" url="{{propA}}" open-type="redirect">
+  <text class="info"><slot></slot></text>
+  <image class="img" src="./btn.png" mode="widthFix"></image>  
+</navigator>

@@ -1,0 +1,141 @@
+/* pages/records/record_sport/record_sport.wxss */
+.health-records-box{
+  height: 100vh;
+}
+
+.health_records-bgImg{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%; 
+}
+
+.topNav{
+  margin-left: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 35rpx;
+  height: 7%;
+  
+  
+}
+
+.health-records-quesitonbox{
+  
+   width:100%; 
+   height:70%;
+   float: left;
+   margin-top:12%;
+   margin-left: 5%;
+}
+
+.health-records-content{
+ /* margin-top: 8%; */
+ margin-left: 15%;
+  position: absolute;
+  z-index: 1;
+  width:70%;
+  height:80%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+   /* box-shadow:0rpx 0rpx 10rpx #5e5e5e; */
+  
+}
+
+.questionbox-checkbox{
+  width:100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  
+  margin-bottom: 1%;
+  
+}
+
+.questionbox-question-txt{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 45rpx;
+  color: #625D5A;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questionbox-text{
+  margin-left: 3%;
+}
+
+.health-records-quesitonbox radio-group{
+  margin-top: 8%;
+}
+
+.questionbox-text{
+  font-weight: bold;
+  color: #625D5A;
+}
+
+
+.submitBTN{
+  width: 100%;
+}
+
+.submitBTN image{
+  margin-top: 15%;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.questionbox-image{
+  height: 150rpx;
+  width:400rpx;
+}
+
+.questionbox-checkbox radio{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.today_success{
+  margin-top: 25%;
+  margin-left: 5%;
+  width: 100%;
+  
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 45rpx;
+  color: #625D5A;
+  font-weight: bold;
+}
+
+
+
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked {
+  border-radius: 50%;
+  border-color: #625D5A!important;
+  background-color: transparent!important;
+    
+}
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before {
+  /* 去除对号 */
+  content: ''; 
+  /* background: #fff; */
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  background-color:#625D5A;
+}
+

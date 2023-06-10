@@ -1,0 +1,115 @@
+<image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/background.png" class="bgimg"></image>
+
+
+<popup id='a' title="keep lv.1" link="10day.png" bind:success='_success1' content='累计打卡10天解锁'></popup>
+<popup id='b' title="keep lv.2" link="30day.png" bind:success='_success2' content='累计打卡30天解锁'></popup>
+<popup id='c' title="keep lv.3" link="100day.png" bind:success='_success3' content='累计打卡100天解锁'></popup>
+<popup id='d' title="alcohol" link="alcohol.png" bind:success='_success4' content='当天未饮酒解锁'></popup>
+<popup id='e' title="diet" link="diet.png" bind:success='_success5' content='当天均匀膳食解锁'></popup>
+<popup id='f' title="exercise" link="exercise.png" bind:success='_success6' content='当天积极锻炼解锁'></popup>
+<popup id='g' title="liver lv.1" link="liver1.png" bind:success='_success7' content='健康值不低于60解锁'></popup>
+<popup id='h' title="liver lv.2" link="liver2.png" bind:success='_success8' content='健康值不低于75解锁'></popup>
+<popup id='i' title="liver lv.3" link="liver3.png" bind:success='_success9' content='健康值不低于90解锁'></popup>
+<popup id='j' title="happiness" link="happiness.png" bind:success='_success10' content='当天情绪较好解锁'></popup>
+<popup id='k' title="sleep" link="sleep.png" bind:success='_success11' content='当天睡眠较好解锁'></popup>
+<popup id='l' title="perfect" link="perfect.png" bind:success='_success12' content='累计打卡100天且健康值不低于90解锁'></popup>
+
+<view>
+  <block wx:if="{{ totalday < 10 }}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/10day(u).png" class="day10" mode="widthFix" bindtap="showPopup1"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/30day(u).png" class="day30" mode="widthFix" bindtap="showPopup2"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/100day(u).png" class="day100" mode="widthFix" bindtap="showPopup3"></image>
+  </block>
+  <block wx:elif="{{ totalday < 30 }}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/10day.png" class="day10" mode="widthFix" bindtap="showPopup1"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/30day(u).png" class="day30" mode="widthFix" bindtap="showPopup2"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/100day(u).png" class="day100" mode="widthFix" bindtap="showPopup3"></image>
+  </block>
+  <block wx:elif="{{ totalday < 100 }}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/10day.png" class="day10" mode="widthFix" bindtap="showPopup1"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/30day.png" class="day30" mode="widthFix" bindtap="showPopup2"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/100day(u).png" class="day100" mode="widthFix" bindtap="showPopup3"></image>
+  </block>
+  <block wx:else>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/10day.png" class="day10" mode="widthFix" bindtap="showPopup1"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/30day.png" class="day30" mode="widthFix" bindtap="showPopup2"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/100day.png" class="day100" mode="widthFix" bindtap="showPopup3"></image>
+  </block>
+</view>
+<view>
+  <block wx:if="{{ alcohol != 0 }}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/alcohol(u).png" class="alcohol" mode="widthFix" bindtap="showPopup4"></image>
+  </block>
+  <block wx:else>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/alcohol.png" class="alcohol" mode="widthFix" bindtap="showPopup4"></image>
+  </block>
+</view>
+<view>
+  <block wx:if="{{ diet < 10 }}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/diet(u).png" class="diet" mode="widthFix" bindtap="showPopup5"></image>
+  </block>
+  <block wx:else>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/diet.png" class="diet" mode="widthFix" bindtap="showPopup5"></image>
+  </block>
+</view>
+<view>
+  <block wx:if="{{ sport < 10 }}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/exercise(u).png" class="exercise" mode="widthFix" bindtap="showPopup6"></image>
+  </block>
+  <block wx:else>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/exercise.png" class="exercise" mode="widthFix" bindtap="showPopup6"></image>
+  </block>
+</view>
+<view>
+  <block wx:if="{{ credit < 60 }}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver(u).png" class="liver1" mode="widthFix" bindtap="showPopup7"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver(u).png" class="liver2" mode="widthFix" bindtap="showPopup8"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver(u).png" class="liver3" mode="widthFix" bindtap="showPopup9"></image>
+  </block>
+  <block wx:elif="{{ credit < 75 }}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver1.png" class="liver1" mode="widthFix" bindtap="showPopup7"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver(u).png" class="liver2" mode="widthFix" bindtap="showPopup8"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver(u).png" class="liver3" mode="widthFix" bindtap="showPopup9"></image>
+  </block>
+  <block wx:elif="{{ credit < 90 }}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver1.png" class="liver1" mode="widthFix" bindtap="showPopup7"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver2.png" class="liver2" mode="widthFix" bindtap="showPopup8"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver(u).png" class="liver3" mode="widthFix" bindtap="showPopup9"></image>
+  </block>
+  <block wx:else>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver1.png" class="liver1" mode="widthFix" bindtap="showPopup7"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver2.png" class="liver2" mode="widthFix" bindtap="showPopup8"></image>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/liver3.png" class="liver3" mode="widthFix" bindtap="showPopup9"></image>
+  </block>
+</view>
+<view>
+  <block wx:if="{{ emotion <= 0 }}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/happiness(u).png" class="happiness" mode="widthFix" bindtap="showPopup10"></image>
+  </block>
+  <block wx:else>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/happiness.png" class="happiness" mode="widthFix" bindtap="showPopup10"></image>
+  </block>
+</view>
+<view>
+  <block wx:if="{{ sleep < 15 }}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/sleep(u).png" class="sleep" mode="widthFix" bindtap="showPopup11"></image>
+  </block>
+  <block wx:else>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/sleep.png" class="sleep" mode="widthFix" bindtap="showPopup11"></image>
+  </block>
+</view>
+<view>
+  <block wx:if="{{ credit < 90 || totalday < 100}}">
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/perfect(u).png" class="perfect" mode="widthFix" bindtap="showPopup12"></image>
+  </block>
+  <block wx:else>
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/perfect.png" class="perfect" mode="widthFix" bindtap="showPopup12"></image>
+  </block>
+</view>
+
+<view>
+  <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/return.png" mode="widthFix" class="return" bindtap="return"></image>
+</view>
+
+
+

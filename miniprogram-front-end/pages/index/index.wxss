@@ -1,0 +1,195 @@
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  color: rgb(132,111,96);
+}
+
+.container {
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+} 
+
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -99;
+}
+
+.topNav{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 20.5%;
+}
+
+.topNav .top{
+  display: flex;
+  flex-direction: row;
+}
+
+.topNav .item{
+  height: 100rpx;
+  z-index: 2;
+  margin: 0, 30rpx;
+  display: block;
+}
+
+.camera{
+  height: 100rpx;
+  z-index: 2;
+  display: block;
+  position: fixed;
+  top: 32%;
+  left: 50rpx;
+}
+
+.topNav .healthValue{
+  width: 410rpx;
+  position: relative;
+  /* background-color:gray; */
+}
+
+.topNav .valueTol{
+  /*真实总宽度：225rpx*/
+  width: 230rpx;
+  height: 45rpx;
+  border: rgb(132,111,96) solid 7rpx;
+  border-radius: 25rpx 0 0 25rpx;
+  position: absolute;
+  top: 19rpx;
+  left: 30rpx;
+}
+
+.topNav .myValue{
+  height: 45rpx;
+  border: rgb(132,111,96) solid 7rpx;
+  border-radius: 25rpx 0 0 25rpx;
+  position: fixed;
+  top: 19rpx;
+  left: 30rpx;
+  background-color: #dc3023;
+}
+
+.topNav .healthValue image{
+  height: 100rpx;
+  position: absolute;
+  left: 250rpx;
+}
+
+.topNav .healthValue text{
+  margin-left: 30rpx;
+  color: brown;
+  font-weight: 550;
+  position: absolute;
+  top: 90rpx;
+}
+
+.topNav .space{
+  flex:1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.topNav .spc{
+  flex: 1;
+}
+
+.topNav .space image{
+  margin: 20rpx;
+}
+
+.function{
+  height: 29.5%;
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+}
+
+.function navigator{
+  position: relative;
+  display: block;
+}
+
+.function text{
+  position: absolute;
+  z-index: 3;
+}
+
+.function .middle text{
+  left: 100rpx;
+  top: 60rpx;
+}
+
+.function .right text{
+  left: 125rpx;
+  top: 60rpx;
+}
+
+.function .left{
+  width: 280rpx;
+}
+
+.function .middle{
+  display: flex;
+  flex-direction: column;
+  width: 270rpx;
+  margin-left: 3rpx;
+}
+
+.function .item{
+  height: 150rpx;
+  margin: 0, 10rpx;
+  padding: 0;
+}
+
+.function .item3{
+  height: 150rpx;
+  position: fixed;
+  top: 33.6%;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  position: relative;
+  height: 660rpx;
+  overflow: hidden;
+}
+
+.bottom .liver{
+  height: 350rpx;
+  margin-left: 20%;
+  z-index: 2;
+}
+
+.bottom .msg{
+  height: 440rpx;
+  margin-left: 10rpx;
+  position: absolute;
+  top: 220rpx;
+}
+
+.bottom .info{
+  position: absolute;
+  top: 370rpx;
+  margin-left: 100rpx;
+  width: 430rpx;
+  height: 200rpx;
+  overflow: scroll;
+}
+
+.guideInfo{
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {"scale":"/components/wx-scale/wx-scale","submitBtn":"../../../components/submitButton/submitButton",
+    "myButton":"../../../components/myButton/myButton"},
+  "navigationBarTitleText": "饮食打卡"
+}

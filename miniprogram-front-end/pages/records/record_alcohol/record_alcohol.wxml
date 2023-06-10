@@ -1,0 +1,61 @@
+<!--pages/records/record_alcohol/record_alcohol.wxml-->
+<view class='health-records-box'>
+    <popup id='a' title="温馨提示" link="reminder.png" bind:success='_success1'></popup>
+    <view>
+      <image  class=".health_records-bgImg" src="../../../images/bg.png"></image>
+    </view>
+    
+    <scroll-view class="topNav" scroll-x="true"  enable-flex="true" scroll-left="350">
+        <myButton prop-a="/pages/records/record_sport/record_sport">运动打卡</myButton>
+       
+        <myButton prop-a="/pages/records/record_sleep/record_sleep">睡眠打卡</myButton>
+        
+        <myButton prop-a="/pages/records/record_emotion/record_emotion">心情打卡</myButton>
+
+        <myButton prop-a="/pages/records/record_diet/record_diet">饮食打卡</myButton>
+
+        <myButton prop-a="/pages/records/record_alcohol/record_alcohol">饮酒打卡</myButton>
+  
+</scroll-view>
+
+    
+    
+    <view class='health-records-content'>
+    <!-- 问题加刻度尺框 -->
+      <view class='health-records-quesitonbox'>
+    
+      <view class='questionbox-question'>
+      <view class="questionbox-question-txt">您今天的酒精摄入量是？</view>
+      </view>
+
+      <view>
+      <view class="questionbox-scale">
+        
+        <view class="Outer_txt">
+          <view class="questionbox-question-txt">酒精摄入量</view>
+          <view class="questionbox-question-txt">{{value}} 克</view>
+        </view>
+
+        <view class='wrap'>
+        <scale min="0" max="100" int="{{true}}" step="1" fiexNum="60" single="10" h="50" step="5" active="{{val}}" styles="{{styles[1]}}" bindvalue="bindvalue"></scale>
+        <button bindtap='assignment'>跳转至 ：50克</button>
+
+      </view>
+    </view>
+
+      </view>
+
+    <!-- 提交框 -->
+    <view>
+        <view class="submitBTN" hover-class="none" wx:if="{{date!=calendarSignData2[date]}}"  bindtap="Submit">
+          <image src="https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/submit2.png"   mode="widthFix"></image>
+        </view>
+        <button wx:else="" hover-class="none">今日已打卡</button>
+       </view>
+
+      </view>
+    </view>
+  
+
+</view>
+

@@ -1,0 +1,7 @@
+
+<canvas id="myCanvas" type="2d" style="position: fixed;width: 600rpx;height: 1000rpx;margin-left: 74rpx; bottom: 20%; background-color: #f6f3ec;" />
+<image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/save.png" class="save" bindtap="saveImg"
+mode="widthFix"></image>
+<image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/returnTo.png" class="return" bindtap="return"
+mode="widthFix"></image>
+

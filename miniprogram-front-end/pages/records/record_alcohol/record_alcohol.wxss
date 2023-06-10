@@ -1,0 +1,57 @@
+/* pages/records/record_alcohol/record_alcohol.wxss */
+@import "../record_public.wxss";
+
+.health-records-quesitonbox{
+  background-color:#EFE5DE;
+  
+  width:100%;
+  height:70%;
+ 
+
+  float: left;
+  margin-top:1%;
+  margin-left: 5%;
+}
+
+.questionbox-scale text {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.wrap {
+  width: 90%;
+  margin: 30rpx auto;
+  border: 1px #ccc solid;
+}
+
+.questionbox-question-txt{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40rpx;
+  color: #625D5A;
+  font-weight: bold;
+}
+
+.Outer_txt{
+  margin-top: 10%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
+.submitBTN{
+  width: 100%;
+}
+
+.submitBTN image{
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.health-records-content{
+  margin-top: 2%;
+}
+
+

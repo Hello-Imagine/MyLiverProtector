@@ -1,0 +1,205 @@
+/* pages/records/records.wxss */
+.btnhover{
+  background:#EFE5DE;
+  opacity: 0.1;
+}
+
+.health-records-box{
+  height: 100vh;
+  background-color:#EFE5DE;
+  justify-content: center;
+  text-align: center;
+}
+
+.health-records-title{
+  height: 100rpx;
+  width: 92%;
+  margin-left: 4%;
+  display: flex;
+
+}
+
+.health-records-title-name{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #5e5e5e;
+}
+
+
+
+.health-records-content{
+  margin-left: 10%;
+  margin-top:20%;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height:80%;
+   /* box-shadow:0rpx 0rpx 10rpx #5e5e5e; */
+  
+}
+
+
+.health-records-content-box{
+ 
+}
+
+.health-records-content-box-img{
+  width: 345rpx;
+  height: 172.5rpx;
+  /* background-color: rosybrown; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+
+
+
+.Click:active{
+  background-color: 	#f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+.health-records-content-1{
+  
+  
+   width: 300rpx;
+   height:215rpx;
+  margin-bottom: 3%;
+   float: left;
+}
+
+
+.health-records-content-2{
+  
+  
+   width: 300rpx;
+   height:215rpx;
+   margin-bottom: 3%;
+   float: left;
+   
+}
+
+.health-records-content-7{
+  
+  background-repeat:no-repeat;  
+  background-size:cover; 
+  -moz-background-size:cover;
+   width: 300rpx;
+   height:200rpx;
+  margin-bottom: 2%;
+   float: left;
+}
+
+
+.health-records-content-3{
+  
+   width: 270rpx;
+   height:215rpx;
+   margin-left: 15rpx;
+   margin-right:30rpx;
+  margin-bottom: 3%;
+   float: left;
+}
+
+
+.health-records-content-4{
+  background-image: url('https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/diet.png');
+  background-repeat:no-repeat;  
+  background-size:cover; 
+  -moz-background-size:cover;
+   width: 273rpx;
+   height:215rpx;
+  margin-bottom: 3%;
+  margin-left: 5rpx;
+   float: left;
+}
+
+
+.health-records-content-5{
+  background-image: url('https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/drinking.png');
+  background-repeat:no-repeat;  
+  background-size:cover; 
+  -moz-background-size:cover;
+  width: 270rpx;
+  height:215rpx;
+  margin-left: 15rpx;
+  margin-right:30rpx;
+ margin-bottom: 3%;
+  float: left;
+}
+
+
+.health-records-content-6{
+  background-image: url('https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/goback.png');
+  background-repeat:no-repeat;  
+  background-size:cover; 
+  -moz-background-size:cover;
+   width: 280rpx;
+   height:215rpx;
+  margin-bottom: 3%;
+  margin-left: 5rpx;
+   float: left;
+}
+
+
+
+.health-records-liver{
+  
+   width: 375rpx;
+   height:275rpx;
+  margin-top:5%;
+
+   float: left;
+}
+
+.health-records-dialogs{
+  width: 300rpx;
+  height:275rpx;
+  margin-top:1%;
+  float: left;
+}
+
+.health-records-dialog-text{
+  
+  background-repeat:no-repeat;  
+  background-size:cover; 
+  -moz-background-size:cover;
+   width: 300rpx;
+   height:100rpx;
+   margin-top: 50rpx;
+
+   float: left;
+}
+
+.health_records-bgImg{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

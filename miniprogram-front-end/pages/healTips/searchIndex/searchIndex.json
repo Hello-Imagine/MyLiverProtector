@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "myButton": "/components/myButton/myButton",
+    "index": "/components/index/index"
+  },
+  "navigationBarTitleText": "肝指标查询"
+}

@@ -1,0 +1,108 @@
+.background{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%; 
+  z-index: -100;
+}
+
+.left{
+  position: fixed;
+  width: 30%;
+  margin-left: 140rpx;
+  bottom: 86%
+}
+
+.right{
+  position: fixed;
+  width: 30%;
+  margin-left: 400rpx;
+  margin-top: 80rpx;
+  bottom: 86%
+}
+
+.window{
+  position: absolute;
+  bottom: 20%;
+  margin-left: 88rpx;
+  width: 540rpx;
+  border-radius: 25rpx;
+  padding: 20rpx;
+  z-index: 1
+}
+
+.input1{
+  position: absolute;
+  margin-left: 100rpx;
+  margin-top: 2.7%;
+  width: 80rpx;
+  border-radius: 20%;
+  background-color: white;
+}
+.text1{
+  position: absolute;
+  margin-top: 2.7%;
+  margin-left: 188rpx;
+  color: rgb(148,131,122);
+  font-weight: 900;
+}
+.input2{
+  position: absolute;
+  margin-top: 2.7%;
+  margin-left: 228rpx;
+  width: 40rpx;
+  border-radius: 20%;
+  background-color: white;
+}
+.text2{
+  position: absolute;
+  margin-top: 2.7%;
+  margin-left: 270rpx;
+  color: rgb(148,131,122);
+  font-weight: 900;
+}
+.input3{
+  position: absolute;
+  margin-top: 2.7%;
+  margin-left: 310rpx;
+  width: 40rpx;
+  border-radius: 20%;
+  background-color: white;
+}
+.text3{
+  position: absolute;
+  margin-top: 2.7%;
+  margin-left: 350rpx;
+  color: rgb(148,131,122);
+  font-weight: 900;
+}
+.search{
+  position: absolute;
+  margin-top: 2.7%;
+  margin-left: 400rpx;
+  width: 8%;
+  z-index: 100;
+}
+
+.canvas{
+  position: absolute;
+  margin-top: 12%;
+  margin-right: 50rpx;
+  z-index: 1;
+  background:#efe4de;
+  /* background-color: red; */
+}
+
+.words{
+  padding-top: 500rpx;
+  color: rgb(148,131,122);
+}
+
+.return{
+  width: 35%;
+  position: absolute;
+  margin-left: 250rpx;
+  bottom: 10%;
+}

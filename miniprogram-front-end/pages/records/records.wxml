@@ -1,0 +1,96 @@
+<!--pages/records/records.wxml-->
+
+<view class='health-records-box'>
+
+  <view  >
+    <image  class=".health_records-bgImg" src="../../images/background.jpg"></image>
+  </view>
+  
+
+  
+
+  <!-- 主体内容 -->
+  <view class='health-records-content'>
+
+<!-- 运动记录 -->
+  <view  hover-class="btnhover">
+   <image bindtap='goSportRecord' class='health-records-content-1 Click'  src="https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/sport.png"></image>
+  </view>
+
+
+<!-- 睡眠记录 -->
+<view  hover-class="btnhover">
+  <image class='health-records-content-2 Click' bindtap='goSleepRecord' src="https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/sleep.png"></image>
+</view>
+
+<!-- 情绪记录 -->
+<view  hover-class="btnhover">
+  <image class='health-records-content-3 Click' bindtap='goEmotionRecords' src="https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/emotion.png"></image>
+  
+</view>
+
+<!-- 饮食记录 -->
+<view class='health-records-content-4 Click' bindtap='goDietRecords' hover-class="btnhover">
+  
+</view>
+
+<!-- 饮酒记录 -->
+<view  class='health-records-content-5 Click' bindtap='goAlcoholRecorded' hover-class="btnhover">
+  
+</view>
+
+ <!-- 返回 -->
+ <view  class='health-records-content-6 Click' bindtap='goBack' hover-class="btnhover">
+ 
+</view>
+
+
+<!-- END -->
+
+    <!-- 肝脏对话框 -->
+  
+   <view wx:if="{{date!=calendarSignData[date]}}">
+    <view class='dialog-box' bindtap="update">
+      
+      <image class='health-records-dialogs' src="https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/dialog00.png"></image>
+      <!--<view class="health-records-dialog-text"></view>-->
+    </view>
+    <view class='liver-box' bindtap="update">
+    <image class='health-records-liver' src="https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/liver_daka.png"></image>
+    </view>
+  </view>
+
+  <view wx:else="">
+    <view class='dialog-box' >
+     
+      <image class='health-records-dialogs' src="https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/dialog01.png"></image>
+      <!--<view class="health-records-dialog-text"></view>-->
+    </view>
+    <view class='liver-box' >
+    <image class='health-records-liver' src="https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/liver_daka.png"></image>
+    </view>
+  </view>
+
+
+  </view>
+
+
+  
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+

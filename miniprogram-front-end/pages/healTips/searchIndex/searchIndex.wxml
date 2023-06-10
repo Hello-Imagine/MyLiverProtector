@@ -1,0 +1,37 @@
+<view class="container">
+  <image class="background" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/searchIndex/background.png"></image>
+
+  <view class="topNav">
+    <myButton prop-a="/pages/healTips/healTips">护肝小贴士</myButton>
+    <myButton prop-a="/pages/healTips/searchDrug/searchDrug">肝药物查询</myButton>
+    <myButton prop-a="/pages/healTips/searchIndex/searchIndex">肝指标查询</myButton>
+  </view>
+
+  <!--搜索框-->
+  <view class="search">
+    <input placeholder="输入查询指标名称" bindinput="bindKeyInput" bindconfirm="searchIndex"></input>
+    <image src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/searchIndex/search.png" mode="widthFix" bindtap="searchIndex"></image>
+  </view>
+
+  <!--显示药物-->
+  <scroll-view class="content" scroll-y bindscrolltolower="onButtom">
+    <view wx:for="{{dataList}}" wx:key="index">
+      <index data-id="{{index}}" bindtap="showInfo">{{item.name}}</index>
+    </view>
+  </scroll-view>
+
+  <view class="isExist" wx:if="{{isExist==false}}">
+    对不起，暂无您搜索的相关指标信息
+  </view>
+</view>
+
+<view class="frame" wx:if="{{showInfo}}">
+  <view class="aboutIndex">
+    <view class="topInfo">
+      <image src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/searchIndex/index.png" mode="widthFix"></image>
+      <text class="name">{{hitIndex.name}}</text>
+    </view>
+    <view class="info">{{hitIndex.info}}</view>
+    <view bindtap="confirm" class="confirm">确认</view>
+  </view>
+</view>

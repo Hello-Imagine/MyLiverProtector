@@ -1,0 +1,22 @@
+.btn{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.img{
+  width: 230rpx;
+}
+.info{
+  position: absolute;
+  z-index: 99;
+  top: 20rpx;
+  left: 85rpx;
+  color: gray;
+  font-weight: 560;
+}
+
+.submitBtn{
+  position: absolute;
+  top: 750rpx;
+  left: 100rpx;
+}

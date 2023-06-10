@@ -1,0 +1,4 @@
+{
+  "usingComponents": { "popup": "/components/popup5/popup5"},
+  "navigationBarTitleText": "每日打卡"
+}

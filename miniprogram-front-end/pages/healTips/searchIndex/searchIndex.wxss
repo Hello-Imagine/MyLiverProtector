@@ -1,0 +1,25 @@
+/* pages/searchIndex/searchIndex.wxss */
+@import "../searchDrug/searchDrug.wxss";
+
+.aboutIndex{
+  background-color: white;
+  border: rgb(132,111,96) solid 6rpx;
+  border-radius: 16rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20rpx 20rpx 24rpx;
+}
+
+.aboutIndex image{
+  width: 80rpx;
+}
+
+.aboutIndex .topInfo{
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutIndex .name{
+  font-size: 40rpx;
+  padding-top: 15rpx;
+}

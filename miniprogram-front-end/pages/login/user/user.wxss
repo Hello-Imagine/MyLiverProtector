@@ -1,0 +1,55 @@
+@import "../questions/questions.wxss";
+.title{
+  display: flex;
+}
+.title text{
+  margin: 50rpx 10rpx;
+}
+.title image{
+  width: 130rpx;
+}
+.livers{
+  display: flex;
+}
+.livers image{
+  width: 350rpx;
+  margin: 30rpx 0;
+}
+.content{
+  margin-top: 5%;
+  color: rgb(85, 82, 82);
+  font-weight: bold;
+}
+.sex image{
+  width: 200rpx;
+  margin: 15rpx 0;
+  border: rgb(132,111,96) solid 4rpx;
+}
+radio-group{
+   display: flex; 
+
+}
+.sex text{
+  text-align: center;
+}
+.sex{
+  margin-top: 10%;
+  padding-left:7% ;
+  padding-right:5%;
+}
+.name{
+  border: rgb(132,111,96) solid 4rpx;
+  width: 50%;
+  height: 50rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-bottom: 40rpx;
+  margin-left: 25%;
+}
+
+.name image{
+  width: 100rpx;
+  z-index: 100;
+}

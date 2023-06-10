@@ -1,0 +1,33 @@
+<image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/background.png" class="background"></image>
+<image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/overview.png" class="left" mode="widthFix" bindtap="overview"></image>
+<image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/detail.png" class="right" mode="widthFix"></image>
+
+
+<view class="window">
+  <input class="input1" placeholder="{{ year }}" bindinput="bindKeyInput1" type="number" />
+  <text class="text1">年</text>
+  <input class="input2" placeholder="{{ month }}" bindinput="bindKeyInput2" type="number" />
+  <text class="text2">月</text>
+  <input class="input3" placeholder="{{ day }}" bindinput="bindKeyInput3" type="number" />
+  <text class="text3">日</text>
+  <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/search.png" class="search" mode="widthFix"
+  bindtap="search"></image>
+
+  <canvas id="canvas" type="2d" style="width:550rpx; height:440rpx" class="canvas"  />
+  <view class="words">
+      <view>您在今天：</view>
+      <view wx:if="{{ total >= 80 }}" >对我的照顾很好，要继续保持哦！</view>
+      <view wx:elif="{{ total >= 50 }}" >对我的照顾一般，要有所改善哦！</view>
+      <view wx:else>对我的照顾不好，要好好对我哦！</view>
+      <view>今日总分{{ total }}，各项得分如下：</view>
+      <view>情绪{{ emotion }}分,饮酒{{ drink }}分，睡眠{{ sleep }}分，运动{{ sport }}分，饮食{{ diet }}分</view>
+      <view wx:if="{{ string1 != ''}}">{{ string1 }}方面做得很好；</view>
+      <view wx:else>暂时没有做得比较好的方面；</view>
+      <view wx:if="{{ string2 != '' }}">{{ string2 }}方面需要加油！</view>
+      <view wx:else>各方面都做得很好！</view>
+  </view>
+</view>
+
+<view>
+  <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/return.png" mode="widthFix" class="return" bindtap="return"></image>
+</view>

@@ -1,0 +1,8 @@
+<!--components/info/info.wxml-->
+<view class="content">
+  <view class="title">
+    <image src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/index/info.png" mode="widthFix"></image>
+    <text>{{propA}}</text>
+  </view>
+  <text class="info"><slot></slot></text>
+</view>

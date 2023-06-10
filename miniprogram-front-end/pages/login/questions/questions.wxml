@@ -1,0 +1,13 @@
+<image class="background" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/login/back.jpg"></image>
+<view class="container">
+  <view class="title">肝健康测试</view>
+  <view class="content">
+    <checkbox-group bindchange="radiochange">
+      <view wx:for="{{qestions}}" wx:key="index">
+        <checkbox value="{{index}}"></checkbox>
+        <text>{{item}}</text>
+      </view>
+    </checkbox-group>
+  </view>
+  <myButton propA="../../index/index?newUser=true">已完成自评</myButton>
+</view>

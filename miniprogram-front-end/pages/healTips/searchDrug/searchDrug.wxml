@@ -1,0 +1,38 @@
+<view class="container">
+  <image class="background" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/searchDrug/background.png"></image>
+
+  <view class="topNav">
+    <myButton prop-a="/pages/healTips/healTips">护肝小贴士</myButton>
+    <myButton prop-a="/pages/healTips/searchDrug/searchDrug">肝药物查询</myButton>
+    <myButton prop-a="/pages/healTips/searchIndex/searchIndex">肝指标查询</myButton>
+  </view>
+
+  <!--搜索框-->
+  <view class="search">
+    <input placeholder="输入查询药物名称" bindinput="bindKeyInput" bindconfirm="searchDrug"></input>
+    <image src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/searchDrug/search.png" mode="widthFix" bindtap="searchDrug"></image>
+  </view>
+
+  <!--显示药物-->
+  <scroll-view class="content" scroll-y bindscrolltolower="onButtom">
+    <view wx:for="{{dataList}}" wx:key="index">
+      <drug prop-a="{{item.type!='0'}}" data-id="{{index}}" bindtap="showInfo">{{item.name}}</drug>
+    </view>
+  </scroll-view>
+
+  <view class="isExist" wx:if="{{isExist==false}}">
+    对不起，暂无您搜索的相关药物信息
+  </view>
+</view>
+
+<view class="frame" wx:if="{{showInfo}}">
+  <view class="aboutDrug">
+    <view class="topInfo">
+      <image wx:if="{{hitDrug.type!='0'}}" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/searchDrug/drug.png" mode="widthFix"></image>
+      <image wx:else src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/searchDrug/danger.png" mode="widthFix"></image>
+      <text class="name">{{hitDrug.name}}</text>
+    </view>
+    <view class="info">{{hitDrug.info}}</view>
+    <view bindtap="confirm" class="confirm">确认</view>
+  </view>
+</view>

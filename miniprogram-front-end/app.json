@@ -1,0 +1,39 @@
+{
+  "pages": [
+      
+      "pages/login/login",
+      "pages/index/index",
+      "pages/healTips/healTips", 
+      "pages/healTips/searchDrug/searchDrug",
+      "pages/healTips/searchIndex/searchIndex",
+      "pages/recipe/recipe", 
+      "pages/records/records",
+      "pages/records/record_alcohol/record_alcohol",
+      "pages/records/record_diet/record_diet",
+      "pages/records/record_emotion/record_emotion",
+      "pages/records/record_sleep/record_sleep",
+      "pages/records/record_sport/record_sport",
+      "pages/relax/relax",
+      "pages/baike/baike",
+      "pages/achievements/achievements",
+      "pages/radar/radar",
+      "pages/summary/summary",
+      "pages/photo/photo",
+      "pages/login/user/user",
+      "pages/login/questions/questions",
+      "components/popup/popup",
+      "components/popup2/popup2",
+      "components/popup3/popup3"
+      
+     
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "护肝使者",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "myButton": "/components/myButton/myButton"
+  },
+  "navigationBarTitleText": "健康小贴士"
+}

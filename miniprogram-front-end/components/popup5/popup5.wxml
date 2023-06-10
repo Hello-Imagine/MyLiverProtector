@@ -1,0 +1,8 @@
+<view class="wx-popup" hidden="{{ flag }}">
+  <view class="popup-container">
+  
+    <view class="wx-popup-btn">
+      <text class="btn_ok" bindtap="_success">确定</text>
+    </view>
+  </view>
+</view>

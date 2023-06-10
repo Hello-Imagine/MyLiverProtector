@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "myButton": "/components/myButton/myButton",
+    "drug":"/components/drug/drug"
+  },
+  "navigationBarTitleText": "肝药物查询"
+}

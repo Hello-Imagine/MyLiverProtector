@@ -1,0 +1,23 @@
+<view class="container">
+  <!--如果是新用户，展示剧情并填写相关信息，生成初始问卷-->
+  <!--wx:if="{{!isExist}}"-->
+  <view wx:if="{{!isExist}}">
+  <swiper autoplay circular interval="4000" bindchange="finish">
+    <view wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" mode="scaleToFill"></image>
+      </swiper-item>
+    </view>
+  </swiper>
+</view>
+
+
+<!--如果是不是新用户，点击开始看望肝宝宝-->
+<view wx:else>
+  <image class="background" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/login/background.jpg"></image>
+  <text class="info">
+    今天是主人坚持保护肝宝宝的第{{totalday}}天！肝宝宝已经等不及要见主人啦！
+  </text>
+  <myButton class="go" propA="../../pages/index/index">去看肝宝宝</myButton>
+</view>
+</view>

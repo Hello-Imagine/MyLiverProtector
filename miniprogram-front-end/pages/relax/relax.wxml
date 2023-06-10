@@ -1,0 +1,43 @@
+<!--pages/relax/relax.wxml-->
+<view class="container">
+  <swiper autoplay interval="3000">
+    <view wx:for="{{swiperImgs}}" wx:key="index">
+      <swiper-item>
+        <navigator url="{{item.url}}">
+          <image src="{{item.img}}" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+    </view>
+  </swiper>
+  
+  <view class="box bflex">
+    <view class="box-item {{index==current ? 'text-selected current' : ' '}}"
+      wx:for="{{tabs}}"
+      wx:key="value"
+      bindtap="tabSelect"
+      data-id="{{index}}">
+      {{item}}
+    </view>  
+  </view>
+
+  <view class="display">
+    <!--音乐播放按钮小图标-->
+    <view wx:for="{{dataList}}" wx:key="index">
+      <view class="item">
+        <image src="{{item.img}}" mode="widthFix" data-id="{{index}}" bindtap="click"></image>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!--点击播放音乐后的 MASK wx:if="{{isPlay}}-->
+  <view wx:if="{{isPlay}}" class="mask">
+    <image bindtap="stop" class="stop" mode="widthFix" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/relax/back.png"></image>
+    <image mode="widthFix" class="img" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/relax/mask.png"></image>
+  </view>
+</view>
+
+<!--wx:if="{{showMSG}}"-->
+<info prop-a="{{today_title}}" wx:if="{{showMSG}}" bindtap="confirm">
+  {{today_msg}}
+</info>

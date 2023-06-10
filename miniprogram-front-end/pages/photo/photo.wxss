@@ -1,0 +1,22 @@
+/* canvas{
+  position: fixed;
+  width: 600rpx;
+  height: 1000rpx;
+  margin-left: 74rpx;
+  background-color: #f6f3ec;
+} */
+
+.save{
+  position: fixed;
+  width: 30%;
+  bottom: 6%;
+  margin-left: 400rpx;
+}
+
+.return{
+  position: fixed;
+  width: 32.5%;
+  bottom: 5.5%;
+  margin-left: 85rpx;
+}
+

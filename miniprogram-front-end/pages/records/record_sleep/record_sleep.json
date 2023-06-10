@@ -1,0 +1,5 @@
+{
+  "usingComponents": {"submitBtn":"../../../components/submitButton/submitButton",
+    "myButton":"../../../components/myButton/myButton"},
+  "navigationBarTitleText": "睡眠打卡"
+}

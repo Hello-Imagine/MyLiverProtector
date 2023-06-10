@@ -1,0 +1,28 @@
+/* components/info/info.wxss */
+.content{
+  border: rgb(132,111,96) solid 6rpx;
+  position: fixed;
+  top: 10rpx;
+  border-radius: 25rpx;
+  background-color:white;
+  width: 70%;
+  margin-left: 15%;
+  padding: 20rpx;
+  margin-top: 25%;
+  color: rgb(90, 77, 77);
+  z-index: 10;
+}
+.title{
+  display: flex;
+}
+.title text{
+  font-size: 45rpx;
+  display: block;
+  margin: 20rpx;
+}
+.title image{
+  width: 100rpx;
+}
+.info{
+  border-bottom-style: solid;
+}

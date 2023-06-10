@@ -1,0 +1,4 @@
+{
+  "usingComponents": {"myButton2":"../../components/myButton2/myButton2","popup": "../../components/popup3/popup3"},
+  "navigationBarTitleText":"健康食谱"
+}

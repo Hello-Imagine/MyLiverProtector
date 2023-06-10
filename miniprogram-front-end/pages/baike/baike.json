@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "popup": "/components/popup4/popup4"
+  },
+  "navigationBarTitleText": "百科图鉴"
+}

@@ -1,0 +1,99 @@
+<!--index.wxml-->
+<view class="container">
+  <image 
+    class="background" 
+    src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/index/background.jpg"
+    style="opacity: {{opacity}}">
+  </image>
+  <navigator
+        url="../photo/photo" 
+        hover-class="none"
+        style="opacity: {{guideTips[8].opacity}}">
+        <image class="camera" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/login/camera.png" mode="heightFix"> </image>
+  </navigator>
+
+  <view class="topNav">
+    <div class="top">
+      <div class="healthValue" style="opacity: {{guideTips[0].opacity}}">
+        <div class="valueTol">
+          <div class="myValue"
+           id="healthVal" 
+           style="width:{{valueWidth}}"></div>
+        </div>
+        <image src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/index/healthVal.png" mode="heightFix"> </image>
+        <text>健康值：{{healthVal}}</text>
+      </div>
+
+    <navigator 
+      url="../healTips/healTips" 
+      hover-class="none"
+      style="opacity: {{guideTips[1].opacity}}">
+      <image class="item" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/index/guide.jpg" mode="heightFix"> </image>
+    </navigator>
+    <navigator 
+      url="../relax/relax" 
+      hover-class="none"
+      style="opacity: {{guideTips[2].opacity}}">
+      <image class="item" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/index/sleep.png" mode="heightFix"> </image>
+    </navigator>
+    <navigator 
+      url="../recipe/recipe" 
+      hover-class="none"
+      style="opacity: {{guideTips[3].opacity}}">
+      <image class="item" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/index/eat.png" mode="heightFix"> </image>
+    </navigator>
+    </div>
+    <div class="space">
+      <navigator 
+        url="../achievements/achievements" 
+        hover-class="none"
+        style="opacity: {{guideTips[4].opacity}}">
+        <image class="item" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/index/goal.png" mode="heightFix"> </image>
+      </navigator>
+      <div class="spc"></div>
+    </div>
+  </view>
+
+  <view class="function">
+    <div class="left"></div>
+    <div class="middle">
+      <navigator url="../summary/summary" style="opacity: {{guideTips[5].opacity}}">
+        <text>健康报告</text>
+        <image class="item" 
+        src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/index/statis.PNG" 
+        mode="heightFix"> </image>      
+      </navigator>
+      <navigator url="../records/records" style="opacity: {{guideTips[6].opacity}}">
+        <text>护肝打卡</text>
+        <image class="item3" 
+        src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/index/toDos.PNG" 
+        mode="heightFix"> </image>
+      </navigator>
+    </div>
+    <div class="right">
+      <navigator url="../baike/baike" style="opacity: {{guideTips[7].opacity}}">
+        <text>图鉴</text>
+        <image class="item" 
+        src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/index/handbook.PNG" 
+        mode="heightFix"> </image>
+    </navigator>
+    </div>
+  </view>
+
+  <view class="bottom">
+    <image class="liver" 
+      mode="heightFix" 
+      src="{{liverbaby.myLiver}}"
+      bindtap="changeLiverType">
+    </image>
+
+    <image class="msg" 
+    src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/index/msg.PNG"></image>
+    <div class="info">{{liverbaby.myMessage}}</div>
+  </view>
+</view>
+
+<!--wx:if="{{showMSG}}"-->
+<info prop-a="{{today_title}}" wx:if="{{showMSG}}" bindtap="confirm">
+  {{today_msg}}
+</info>

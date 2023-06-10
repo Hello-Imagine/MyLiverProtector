@@ -1,0 +1,34 @@
+/* pages/login/login.wxss */
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+swiper{
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  z-index: -99;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+}
+.info{
+  position: fixed;
+  top:82%;
+  padding:0 10%;
+}
+.go{
+  position: fixed;
+  top: 65%;
+  left: 33%;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -99;
+}

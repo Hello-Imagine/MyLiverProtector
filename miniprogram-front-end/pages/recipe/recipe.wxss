@@ -1,0 +1,127 @@
+/* pages/recipe/recipe.wxss */
+.health-recipe-box{
+  height: 100vh;
+}
+
+.health_records-bgImg{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%; 
+}
+
+.health-recipe-content{
+  margin-left: 10%;
+  margin-top:3%;
+  position: absolute;
+  z-index: 2;
+  width:80%;
+  height:85%;
+  justify-content: center;
+  
+   /* box-shadow:0rpx 0rpx 10rpx #5e5e5e; */
+  
+}
+
+.search{
+  border: rgb(132,111,96) solid 6rpx;
+  width: 60%;
+  height: 42rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: honeydew;
+  margin-top: 10rpx;
+}
+
+.health-recipe-hw{
+  height: 20%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.recipe-input{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.submitBtn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.recipe-box{
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 600rpx;
+  height: 923.58rpx;
+  background-image: url("https://miniprogram-1305537466.cos.ap-chengdu.myqcloud.com/miniprogram-MZY/recipe_bg.png");
+  background-repeat:no-repeat;  
+  background-size:cover; 
+  /* -moz-background-size:cover; */
+}
+
+.recipe{
+  margin-left: 13%;
+  margin-right: 13%;
+  height: 28%;
+  display: flex;
+  flex-direction: row;
+  width: 74%;
+  margin-bottom: 4%;
+}
+
+.recipe-title{
+  margin-left: 5%;
+  height: 100%;
+  width: 15%;
+  margin-right: 5%;
+}
+
+.recipe-pic{
+  margin-top: 5%;
+  margin-left:6%;
+  width: 40%;
+  height: 50%;
+}
+.recipe-pic image{
+  width: 100%;
+}
+
+.recipe-detail{
+height: 90%;
+width: 80%;
+display: flex;
+flex-direction: column;
+align-items: center;
+z-index: 100;
+}
+
+text{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35rpx;
+  color: #625D5A;
+  font-weight:  bold;
+}
+
+.recipe-box-bgImg{
+  z-index: 1;
+}
+
+.recipe-outer{
+  margin-top: 25%;
+  width: 100%;
+  height: 100%;
+}

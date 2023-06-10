@@ -1,0 +1,11 @@
+<view class="wx-popup" hidden="{{ flag }}">
+  <view class="popup-container">
+    <view class="wx-popup-title">{{ title }}</view>
+    <view class="wx-popup-content">{{ content }}</view>
+    <!-- <image src="/pages/achievements/img/{{ link }}" mode="widthFix"></image> -->
+    <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/{{ link }}" mode="widthFix"></image>
+    <view class="wx-popup-btn">
+      <text class="btn_ok" bindtap="_success">确定</text>
+    </view>
+  </view>
+</view>

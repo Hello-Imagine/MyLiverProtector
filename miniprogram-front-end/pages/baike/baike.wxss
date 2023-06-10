@@ -1,0 +1,107 @@
+
+
+.bgimg{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%; 
+  z-index: -100;
+}
+
+
+
+.day10{
+  width: 23%;
+  position: fixed;
+  margin-left: 13%;
+  bottom: 70%;
+  z-index: -1;
+}
+
+.day30{
+  width: 23%;
+  position: fixed;
+  margin-left: 39%;
+  bottom: 70%;
+  z-index: -1;
+}
+
+.day100{
+  width: 23%;
+  position: fixed;
+  margin-left: 65%;
+  bottom: 70%;
+  z-index: -1;
+}
+
+.alcohol{
+  width: 23%;
+  position: fixed;
+  margin-left: 13%;
+  bottom: 51%;
+  z-index: -1;
+}
+
+.diet{
+  width: 23%;
+  position: fixed;
+  margin-left: 39%;
+  bottom: 51%;
+  z-index: -1;
+}
+
+.exercise{
+  width: 23%;
+  position: fixed;
+  margin-left: 65%;
+  bottom: 51%;
+  z-index: -1;
+}
+
+.liver1{
+  width: 23%;
+  position: fixed;
+  margin-left: 13%;
+  bottom: 32%;
+  z-index: -1;
+}
+
+.liver2{
+  width: 23%;
+  position: fixed;
+  margin-left: 39%;
+  bottom: 32%;
+  z-index: -1;
+}
+
+.liver3{
+  width: 23%;
+  position: fixed;
+  margin-left: 65%;
+  bottom: 32%;
+  z-index: -1;
+}
+
+.return{
+  width: 35%;
+  position: fixed;
+  margin-left: 32%;
+  bottom: 14%;
+  z-index: -1;
+}
+
+.mask image{
+  width: 103%;
+  position: fixed;
+
+  z-index: -1;
+}
+
+.mask{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  /* padding-left: 9%; */
+}

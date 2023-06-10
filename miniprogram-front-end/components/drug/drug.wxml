@@ -1,0 +1,7 @@
+<view class="Drug">
+  <!--如果为护肝药物-->
+  <image wx:if="{{propA}}" src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/searchDrug/drug.png" mode="widthFix"></image>
+  <image wx:else src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/searchDrug/danger.png" mode="widthFix"></image>
+  <text class="name"><slot></slot></text>
+</view>
+

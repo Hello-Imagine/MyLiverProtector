@@ -1,0 +1,6 @@
+<view class="submitBtn">
+  <view class="btn" hover-class="none" >
+  <text class="info"><slot></slot></text>
+  <image class="img" src="./btn.png" mode="widthFix"></image>  
+  </view>
+</view>

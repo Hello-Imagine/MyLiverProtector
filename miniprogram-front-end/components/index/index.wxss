@@ -1,0 +1,14 @@
+.index{
+  border: rgb(132,111,96) solid 6rpx;
+  border-radius: 25rpx;
+  display: flex;
+  background-color:white;
+  margin-top: 12rpx;
+}
+.index image{
+  width: 70rpx;
+}
+.index .name{
+  padding-left: 20rpx;
+  padding-top: 16rpx;
+}

@@ -1,0 +1,4 @@
+<view class="index">
+  <image src="https://liverprotector-1305433999.cos.ap-nanjing.myqcloud.com/images/searchIndex/index.png" mode="widthFix"></image>
+  <text class="name"><slot></slot></text>
+</view>

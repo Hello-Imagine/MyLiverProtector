@@ -1,0 +1,53 @@
+<!-- <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/background.png" class="background"></image> -->
+<image src="../../images/bg.png" class="background"></image>
+<image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/overview.png" class="left" mode="widthFix"></image>
+<image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/detail.png" class="right"  mode="widthFix" bindtap="detail"></image>
+
+<div class="border">  </div>
+<image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/baby.jpg" class="border_img" mode="widthFix"></image>
+
+
+
+<view class="window">
+  <text class="title">最近15天健康报表</text>
+
+  <canvas id="firstCanvas" type="2d" class="firstCanvas"/>
+  <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/coordinate.png" class="coordinate" mode="widthFix"></image>
+
+  <view wx:if="{{ average > 75 }}">
+      <text class="content" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主人您最近15天：健康均分{{ average }}，对我的照顾很好，要继续保持哦！其中{{ num1 }}天未打卡，另外{{ num2 }}天表现不太好，剩余天数表现都还不错哈。</text>
+  </view>
+  <view wx:elif="{{ average > 50 }}">
+      <text class="content" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主人您最近15天：健康均分{{ average }}，对我的照顾一般，要有所改善哦！其中{{ num1 }}天未打卡，另外{{ num2 }}天表现不太好，剩余天数表现都还不错哈。</text>
+  </view>
+  <view wx:else>
+      <text class="content" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主人您最近15天：健康均分{{ average }}，对我的照顾不好，要好好对我哦！其中{{ num1 }}天未打卡，另外{{ num2 }}天表现不太好，剩余天数表现都还不错哈。</text>
+  </view> 
+    
+
+
+  <view>
+    <text class="content1">连续天数：{{ contin }}</text>
+    <div class="container1" style="width: 200rpx;">
+      <div class="div1" style="width:{{ width1 }}"></div>
+    </div>
+  </view>
+
+  <view>
+    <text class="content2">过去15天均分：{{ average }}</text>
+    <div class="container2" style="width: 200rpx;">
+      <div class="div2" style="width:{{ width2 }}"></div>
+    </div>
+  </view>
+
+  <view>
+    <text class="content3">未打卡天数：{{ num1 }}</text>
+    <div class="container3" style="width: 200rpx;">
+      <div class="div3" style="width:{{ width3 }}"></div>
+    </div>
+  </view>
+</view>
+
+<!-- <view>
+  <image src="https://test-1305816403.cos.ap-chengdu.myqcloud.com/return.png" mode="widthFix" class="return"  bindtap="return"></image>
+</view> -->
