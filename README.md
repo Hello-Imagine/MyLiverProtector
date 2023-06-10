@@ -3,7 +3,7 @@
 ## Product Overview
 
 <!-- 《护肝使者》是一款基于手绘游戏化风格的肝健康管理小程序，融入了一种将医学知识科普、健康生活打卡记录、个性化健康帮助结合的新颖的设计理念，营造了一个培养宠物肝宝宝的卡通世界。 -->
-"**The Liver Guardian**" is a liver health management mini-program based on a hand-drawn gamified style. It incorporates a novel design concept that combines medical knowledge dissemination, health lifestyle check-ins, and personalized health assistance. It creates a cartoon world where users can cultivate their own pet liver babies.
+"**The Liver Guardian**" is a liver health management program based on a hand-drawn gamified style. It incorporates a novel design concept that combines medical knowledge dissemination, health lifestyle check-ins, and personalized health assistance. It creates a cartoon world where users can cultivate their own pet liver babies.
 
 <!-- 前端代码在当前仓库的文件夹下，你可以使用微信开发者工具将它运行起来。 -->
 You can download the frontend code in the current repository and use the [WeChat Developer Tools](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html) to run it.
